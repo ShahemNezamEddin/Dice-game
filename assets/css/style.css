@@ -38,11 +38,45 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-  }
-  .player {
+}
+
+.player {
     flex: 50%;
-    padding: 5rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
+
+  /* ELEMENTS */
+.name {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.score {
+    font-size: 5rem;
+    color: #c7365f;
+}
+
+.current {
+  background-color: #c7365f;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 70%;
+}
+
+.current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.current-score {
+    font-size: 3rem;
+}
