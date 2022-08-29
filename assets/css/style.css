@@ -28,7 +28,7 @@ body {
 }
 
 /* LAYOUT */
-main {
+.game-area {
     position: relative;
     width: 70%;
     height: 60rem;
@@ -100,11 +100,7 @@ main {
     cursor: pointer;
     font-weight: 400;
     transition: all 0.2s;
-  
-    background-color: white;
     background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-  
     padding: 0.7rem 2.5rem;
     border-radius: 50rem;
     box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
@@ -114,9 +110,31 @@ main {
   }
 
 .btn-roll {
-    top: 39.3rem;
+    top: 41.3rem;
   }
 
 .btn-hold {
-    top: 46.1rem;
+    top: 48.1rem;
+}
+
+.btn:active {
+    transform: translate(-50%, 3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* For medium screens size from 950px wide and down */
+@media screen and (max-width: 950px) {
+    .dice {
+        top: 9.5rem;
+    }
+
+    .game-area {
+        width: 90%;
+    }
+
+    .btn:active {
+        transform: translate(-20%, 3px);
+    }
 }
