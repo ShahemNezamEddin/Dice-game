@@ -8,6 +8,9 @@ let diceEl = document.querySelector(".dice");
 let btnNew = document.querySelector(".btn-new");
 let btnRoll = document.querySelector(".btn-roll");
 let btnHold = document.querySelector(".btn-hold");
+let currentScore = 0;
+let playerActive = 0;
+
 
 // When the game lode and if now game button clicked
 
@@ -27,6 +30,15 @@ btnRoll.addEventListener("click", function(){
     //Display dice roll
     diceEl.classList.remove("hidden");
     diceEl.src = `assets/images/dice-${dice}.png`;
-    //Is it a 1? 
-
+    //Is it a 1?
+    if(dice !== 1){
+        //Add dice roll to the current score
+        currentScore += dice;
+        document.getElementById(`current-${playerActive}`).innerText = currentScore;
+    } else {
+        //Switch player
+        document.getElementById(`current-${playerActive}`).innerText = 0;
+        playerActive = playerActive === 0 ? 1 : 0;
+        currentScore = 0;
+    }
 });
