@@ -1,5 +1,6 @@
 // Selecting elements
-
+let player0 = document.querySelector(".player-0");
+let player1 = document.querySelector(".player-1");
 let score0El = document.getElementById("score-0");
 let score1El = document.getElementById("score-1");
 let current0El = document.getElementById("current-0");
@@ -19,7 +20,9 @@ function newGame(){
     score1El.innerText = 0;
     current0El.innerText = 0;
     current1El.innerText = 0;
-    diceEl.classList.add("hidden");   
+    diceEl.classList.add("hidden");
+    player0.classList.add("player-active");
+    player1.classList.remove("player-active")  
 }
 newGame();
 
@@ -40,5 +43,10 @@ btnRoll.addEventListener("click", function(){
         document.getElementById(`current-${playerActive}`).innerText = 0;
         playerActive = playerActive === 0 ? 1 : 0;
         currentScore = 0;
+        player0.classList.toggle("player-active")
+        player1.classList.toggle("player-active")
     }
 });
+
+// Add eventListener to hold button
+

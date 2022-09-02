@@ -122,6 +122,12 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
+.player-active {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    justify-content: center;
+}
+
 .hidden {
     display: none;
 }
@@ -139,6 +145,6 @@ body {
     }
 
     .btn:active {
-        transform: translate(-20%, 3px);
+        transform: translate(3px);
     }
 }
