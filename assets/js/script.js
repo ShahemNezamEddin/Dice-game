@@ -9,8 +9,10 @@ let diceEl = document.querySelector(".dice");
 let btnNew = document.querySelector(".btn-new");
 let btnRoll = document.querySelector(".btn-roll");
 let btnHold = document.querySelector(".btn-hold");
-let currentScore = 0;
-let playerActive = 0;
+let currentScore;
+let playerActive;
+let score;
+
 
 
 // When the game lode and if now game button clicked
@@ -20,11 +22,25 @@ function newGame(){
     score1El.innerText = 0;
     current0El.innerText = 0;
     current1El.innerText = 0;
+
+    currentScore = 0;
+    playerActive = 0;
+    score =[0, 0];
+
     diceEl.classList.add("hidden");
     player0.classList.add("player-active");
     player1.classList.remove("player-active")  
 }
 newGame();
+
+function switchPlayer(){
+    document.getElementById(`current-${playerActive}`).innerText = 0;
+    playerActive = playerActive === 0 ? 1 : 0;
+    currentScore = 0;
+    player0.classList.toggle("player-active")
+    player1.classList.toggle("player-active")
+};
+
 
 // Add eventListener to roll button
 btnRoll.addEventListener("click", function(){
@@ -40,13 +56,24 @@ btnRoll.addEventListener("click", function(){
         document.getElementById(`current-${playerActive}`).innerText = currentScore;
     } else {
         //Switch player
-        document.getElementById(`current-${playerActive}`).innerText = 0;
-        playerActive = playerActive === 0 ? 1 : 0;
-        currentScore = 0;
-        player0.classList.toggle("player-active")
-        player1.classList.toggle("player-active")
+        switchPlayer();
     }
 });
 
 // Add eventListener to hold button
 
+btnHold.addEventListener("click", function(){
+   // Add current score to total score
+   score[playerActive] += currentScore
+   document.getElementById(`score-${playerActive}`).innerText = score[playerActive];
+   // Is the total score>=100?
+   if(score[playerActive] >= 100){
+    //Active player wins!
+    document.querySelector(`.player-${playerActive}`).classList.add("winner")
+    document.querySelector(`.player-${playerActive}`).classList.remove("player-active")
+   } else {
+    //Switch player
+   switchPlayer();
+   }
+   
+});
