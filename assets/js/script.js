@@ -27,20 +27,22 @@ function newGame() {
     currentScore = 0;
     playerActive = 0;
     score = [0, 0];
-    playing = true
+    playing = true;
 
     diceEl.classList.add("hidden");
     player0.classList.add("player-active");
-    player1.classList.remove("player-active")
+    player1.classList.remove("player-active");
+    player0.classList.remove("winner");
+    player1.classList.remove("winner");
 }
-newGame();
+
 
 function switchPlayer() {
     document.getElementById(`current-${playerActive}`).innerText = 0;
     playerActive = playerActive === 0 ? 1 : 0;
     currentScore = 0;
-    player0.classList.toggle("player-active")
-    player1.classList.toggle("player-active")
+    player0.classList.toggle("player-active");
+    player1.classList.toggle("player-active");
 };
 
 
@@ -69,18 +71,30 @@ btnRoll.addEventListener("click", function () {
 btnHold.addEventListener("click", function () {
     if (playing) {
         // Add current score to total score
-        score[playerActive] += currentScore
+        score[playerActive] += currentScore;
         document.getElementById(`score-${playerActive}`).innerText = score[playerActive];
         // Is the total score>=100?
         if (score[playerActive] >= 100) {
             //Active player wins!
-            document.querySelector(`.player-${playerActive}`).classList.add("winner")
-            document.querySelector(`.player-${playerActive}`).classList.remove("player-active")
-            playing = false
+            document.querySelector(`.player-${playerActive}`).classList.add("winner");
+            document.querySelector(`.player-${playerActive}`).classList.remove("player-active");
+            playing = false;
             diceEl.classList.add("hidden");
         } else {
             //Switch player
             switchPlayer();
         }
     }
+});
+
+// Add eventListener to New game button
+
+btnNew.addEventListener("click", function () {
+    newGame();
+});
+
+// Wait for the DOM to finish loading before running the game
+
+document.addEventListener("DOMContentLoaded", function() {
+    newGame();
 });
