@@ -53,7 +53,7 @@
 - The wireframe display desktop computer.
 - No need for small screens wireframe because game's width is 70% from the page.
 
-![Wireframe ](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/wireframe-homepage.PNG)
+![Wireframe ]()
 
 
 [Back to top](<#navigator>)
@@ -75,11 +75,7 @@
   ### Color scheme
   - Use the color group to get the [contrast-grid](https://contrast-grid.eightshapes.com/).
 
-![Adobe color](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/adobe-color.png)
-
-![My color space](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/mycolor-space.png)
-
-![Contrast grid](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/contrast-grid.png)
+![Contrast grid]()
 
 
 [Back to top](<#navigator>)
