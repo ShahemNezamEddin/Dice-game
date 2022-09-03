@@ -1,108 +1,234 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Koning Dice Game 2022
 
-Welcome ShahemNezamEddin,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Responsive Mockup](#)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Navigator
 
-## Gitpod Reminders
+- [**User experience UX**](<#user-experience-ux>)
+    - [User stories](<#user-stories>)
+    - [Wireframes](<#wireframes>)
+    - [Site structure](<#site-structure>)
+    - [Design choices](<#design-choices>)
+       - [Typography](<#typography>)
+       - [Color scheme](<#color-scheme>)
+- [**Features**](<#features>)
+    - [Existing features](<#existing-features>)
+         - [Game Area](<#game-area>)   
+    - [Future features](<#future-features>)
+- [**Technologies used**](<#technologies-used>)         
+- [**Testing**](<#testing>)
+    - [Code Validation](<#code-validation>)
+    - [Responsiveness Test](<#responsiveness-test>)
+    - [Browser Compatibility](<#browser-compatibility>)
+    - [Lighthouse](<#lighthouse>)
+    - [Fixed bugs](<#Fixed-bugs>)
+- [**Deployment**](<#deployment>)
+    - [To deploy the project](<#to-deploy-the-project>)
+    - [To fork the repository on GitHub](<#to-fork-the-repository-on-github>)
+    - [To create a local clone of this project](<#to-create-a-local-clone-of-this-project>)
+- [**Credits**](<#credits>)
+    - [Content](<#content>)
+    - [Media](<#media>)     
+- [**Acknowledgements**](<#acknowledgements>)    
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# User experience (UX)
 
-`python3 -m http.server`
+## User stories
 
-A blue button should appear to click: _Make Public_,
+- As a user I want to be able to know the instructions of the game.
+- As a user I want to understand the purpose of the site upon loading it.
+- As a user I want to know which player is active.
+- As a user I want to see the dice rolling.
+- As a user I want to hear sound effect on button click.
+- As a user I want to know scours.
+- As a user I want to know the winner.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+[Back to top](<#navigator>)
 
-A blue button should appear to click: _Make Public_,
+## Wireframes
 
-Another blue button should appear to click: _Open Browser_.
+- The wireframes for Koning Dice Game 2022 were produced in [Balsamiq](https://balsamiq.com).
+- The wireframe display desktop computer.
+- No need for small screens wireframe because game's width is 70% from the page.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Wireframe ](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/wireframe-homepage.PNG)
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+[Back to top](<#navigator>)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Site structure
 
-------
+- Koning Dice Game 2022 has one page contain game area.
+ 
+[Back to top](<#navigator>)
 
-## Release History
+## Design choices
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  ### Typography
+  - The fonts chosen were 'Oswald' for the headings and 'Lato' for the body text. They fall back to sans-serif respectively.
+  - 'Lato' is used for the body text as it provides a nice contrast to the cursive whilst being easy to read for all. 
+  - 'Oswald' is used based on google font paring with 'Lato'.
+  - Dancing together site is using both fonts same as Love Running Project.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  ### Color scheme
+  - Use the color group to get the [contrast-grid](https://contrast-grid.eightshapes.com/).
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Adobe color](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/adobe-color.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![My color space](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/mycolor-space.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Contrast grid](https://github.com/ShahemNezamEddin/Dancing-together/blob/main/assets/images/contrast-grid.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+[Back to top](<#navigator>)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# Features 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Existing features
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Game area
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Nav Bar]()
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+[Back to top](<#navigator>)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Future features
 
-------
 
-## FAQ about the uptime script
+[Back to top](<#navigator>)
 
-**Why have you added this script?**
+# Technologies used
+- [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - provides functions to make the game interactive with players.
+- [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
+- [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+- [Github](https://github.com/) - used to host and edit the website.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+[Back to top](<#navigator>)
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Testing 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Code Validation
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### HTML
 
-**So….?**
+* No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![W3C Validator test result]()
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### CSS
+  - No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![W3C Validator test result]()
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+[Back to top](<#navigator>)
 
----
+## Responsiveness Test
 
-Happy coding!
+* The responsive tests were exercised by using [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/).
+
+|        | iPad mine | Galaxy S5 | iPhone 6/7/8 | iPad | iPad Pro | iPhone 6/7/8 plus | Display >1200px |
+|--------|-----------|-----------|--------------|------|----------|-------------------|-----------------|
+| Text   | pass      | pass      | pass         | pass | pass     | pass              | pass            |
+| Images | pass      | pass      | pass         | pass | pass     | pass              | pass            |
+
+[Back to top](<#navigator>)
+
+
+## Browser Compatibility
+
+- The dancing together site was tested on the following browsers Google Chrome, Safari and Mozilla Firefox.
+- Appearance, functionality and responsiveness were consistent on a range of different device sizes and browsers.
+
+[Back to top](<#navigator>)
+
+## Lighthouse
+The site was also tested using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome Developer Tools to test each of the pages for:
+- Performance - How the page performs whilst loading.
+- Accessibility - Is the site accessible for all users and how can it be improved.
+- Best Practices - Site conforms to industry best practices.
+- SEO - Search engine optimization. Is the site optimized for search engine result rankings.
+
+![Lighthouse test results Koning Dice Game 2022 page]()
+
+
+[Back to top](<#navigator>)
+
+## Fixed bugs
+
+
+[Back to top](<#navigator>)
+
+# Deployment
+
+## To deploy the project
+The site deployed to GitHub pages. The steps to deploy a site are as follows:
+  1. In the Dance together gitHub repository, go to **settings** tap.
+  2. In Settings, navigate to the **Pages** tab on the left-hand side.
+  3. Under **Source**, select the branch to **main**, then click **save**.
+  4. Once the main branch has been selected, the page will be automatically deployed successfully on the [Koning Dice Game 2022](https://shahemnezameddin.github.io/Dice-game/) site.
+
+![Deployment]()
+
+[Back to top](<#navigator>)
+
+## To fork the repository on GitHub
+A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
+1. Log in to **GitHub** and locate the [repository](https://github.com/ShahemNezamEddin/Dancing-together).
+2. On the right-hand side of the page inline with the repository name, is a button called **'Fork'**. Click on the button to create a copy of the original repository in your GitHub Account.
+
+![Github repository fork]()
+
+[Back to top](<#navigator>)
+
+## To create a local clone of this project
+The method for cloning a project from GitHub is below:
+
+1. Under the repository’s name, click on the **code** tab.
+2. In the **Clone with HTTPS** section, click on the clipboard icon to copy the given URL.
+3. In your IDE of choice, open **Git Bash**.
+4. Change the current working directory to where you want the cloned directory to be made.
+5. Type **git clone**, then paste the URL copied from GitHub.
+6. Press **enter**, and the local clone will be created.
+
+![Github repository clone]()
+
+[Back to top](<#navigator>)
+
+
+# Credits 
+
+### Content 
+
+- The font came from [Google Fonts](https://fonts.google.com/).
+- The color palate was compiled by:
+  - [Contrast grid](https://contrast-grid.eightshapes.com/).
+- The wireframes were created by [Balsamiq](https://balsamiq.com/wireframes/).
+- The Logo in the header was designed by **Nahla Nezam Eddin**
+- The emoji in buttons were taken from [emojicombos](https://emojicombos.com/bowling).
+- The game idea came from Code Institute course materials and youtube videos.
+- The inspiration for the game came from Love Maths project and  rock, paper, and scissors game.
+
+[Back to top](<#navigator>)
+
+### Media
+
+- The images used in the game are from [clker](http://www.clker.com/clipart-dice-6-3.html)
+
+[Back to top](<#navigator>)
+
+# Acknowledgements
+I want to thank:
+- My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for guidance and support.
+- Slack community and Code Institute crew for their help and support.
+- My family and friends, for their user experience and feedback.
+
+[Back to top](<#navigator>)
