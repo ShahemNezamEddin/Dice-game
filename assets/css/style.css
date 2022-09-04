@@ -121,6 +121,10 @@ body {
     top: 55rem;
 }
 
+.btn-ok {
+    top: 55rem;
+}
+
 .btn:active {
     transform: translate(5px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
@@ -148,10 +152,23 @@ body {
 
 .instruction {
     position: absolute;
-    background-color: aqua;
+    background-color: #e47777;
     height: 100%;
     width: 60%;
 }
+
+.instruction h2 {
+    font-size: 5rem;
+}
+
+.instruction ul {
+    list-style-type: none;
+}
+
+.instruction ul li {
+    font-size: 2.5rem;
+}
+
 
 /* For medium screens size from 950px wide and down */
 @media screen and (max-width: 950px) {
