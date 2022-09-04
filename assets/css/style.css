@@ -183,4 +183,16 @@ body {
     .btn:active {
         transform: translate(3px);
     }
+
+    .instruction {
+        width: 90%
+    }
+
+    .instruction h2 {
+        font-size: 4rem;
+    }
+    
+    .instruction ul li {
+        font-size: 2.2rem;
+    }
 }
