@@ -13,6 +13,9 @@ let currentScore;
 let playerActive;
 let score;
 let playing;
+let instruction = document.querySelector(".instruction");
+let btnOk = document.querySelector(".btn-ok");
+let btnInstruction = document.querySelector(".btn-instruction");
 
 
 
@@ -97,4 +100,17 @@ btnNew.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function() {
     newGame();
+});
+
+
+// Add eventListener to ok button
+
+btnOk.addEventListener("click", function () {
+    instruction.classList.add("hidden");
+});
+
+// Add eventListener to ok button
+
+btnInstruction.addEventListener("click", function () {
+    instruction.classList.remove("hidden");
 });

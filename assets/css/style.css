@@ -117,6 +117,10 @@ body {
     top: 48.1rem;
 }
 
+.btn-instruction {
+    top: 55rem;
+}
+
 .btn:active {
     transform: translate(5px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
@@ -142,6 +146,12 @@ body {
     color: #c7365f
 }
 
+.instruction {
+    position: absolute;
+    background-color: aqua;
+    height: 100%;
+    width: 60%;
+}
 
 /* For medium screens size from 950px wide and down */
 @media screen and (max-width: 950px) {
