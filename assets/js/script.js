@@ -37,6 +37,11 @@ function newGame() {
     player1.classList.remove("player-active");
     player0.classList.remove("winner");
     player1.classList.remove("winner");
+
+    document.querySelector(".name-0").innerText = "player 1";
+    document.querySelector(".name-1").innerText = "player 2";
+
+
 }
 
 
@@ -77,10 +82,11 @@ btnHold.addEventListener("click", function () {
         score[playerActive] += currentScore;
         document.getElementById(`score-${playerActive}`).innerText = score[playerActive];
         // Is the total score>=100?
-        if (score[playerActive] >= 100) {
+        if (score[playerActive] >= 20) {
             //Active player wins!
             document.querySelector(`.player-${playerActive}`).classList.add("winner");
             document.querySelector(`.player-${playerActive}`).classList.remove("player-active");
+            document.querySelector(`.name-${playerActive}`).innerText = "Winner"
             playing = false;
             diceEl.classList.add("hidden");
         } else {
