@@ -154,7 +154,7 @@ body {
     position: absolute;
     background-color: #e47777;
     height: 100%;
-    width: 60%;
+    width: 65%;
 }
 
 .instruction h2 {
@@ -162,6 +162,7 @@ body {
 }
 
 .instruction ul {
+    padding-top: 12%;
     list-style-type: none;
 }
 
