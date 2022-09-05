@@ -82,6 +82,7 @@ btnRoll.addEventListener("click", function () {
         //Display dice roll
         diceEl.classList.remove("hidden");
         diceEl.src = `assets/images/dice-${dice}.png`;
+        diceEl.alt = `Playing dice ${dice}`;
         //Is it a 1?
         if (dice !== 1) {
             //Add dice roll to the current score
