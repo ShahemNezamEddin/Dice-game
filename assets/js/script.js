@@ -16,7 +16,8 @@ let playing;
 let instruction = document.querySelector(".instruction");
 let btnOk = document.querySelector(".btn-ok");
 let btnInstruction = document.querySelector(".btn-instruction");
-
+let diceAudio = document.getElementById("dice-audio");
+let clickAudio = document.getElementById("click-audio");
 
 
 // When the game lode and if now game button clicked
@@ -57,6 +58,7 @@ function switchPlayer() {
 // Add eventListener to roll button
 btnRoll.addEventListener("click", function () {
     if (playing) {
+        diceAudio.play();
         //Generate random dice roll
         let dice = Math.floor(Math.random() * 6) + 1;
         //Display dice roll
@@ -78,6 +80,7 @@ btnRoll.addEventListener("click", function () {
 
 btnHold.addEventListener("click", function () {
     if (playing) {
+        clickAudio.play();
         // Add current score to total score
         score[playerActive] += currentScore;
         document.getElementById(`score-${playerActive}`).innerText = score[playerActive];
@@ -99,6 +102,7 @@ btnHold.addEventListener("click", function () {
 // Add eventListener to New game button
 
 btnNew.addEventListener("click", function () {
+    clickAudio.play();
     newGame();
 });
 
@@ -112,11 +116,13 @@ document.addEventListener("DOMContentLoaded", function() {
 // Add eventListener to ok button
 
 btnOk.addEventListener("click", function () {
+    clickAudio.play();
     instruction.classList.add("hidden");
 });
 
 // Add eventListener to ok button
 
 btnInstruction.addEventListener("click", function () {
+    clickAudio.play();
     instruction.classList.remove("hidden");
 });
