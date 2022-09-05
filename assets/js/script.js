@@ -1,24 +1,19 @@
 // Selecting elements
-let player0 = document.querySelector(".player-0");
-let player1 = document.querySelector(".player-1");
-let score0El = document.getElementById("score-0");
-let score1El = document.getElementById("score-1");
-let current0El = document.getElementById("current-0");
-let current1El = document.getElementById("current-1");
-let diceEl = document.querySelector(".dice");
-let btnNew = document.querySelector(".btn-new");
-let btnRoll = document.querySelector(".btn-roll");
-let btnHold = document.querySelector(".btn-hold");
-let currentScore;
-let playerActive;
-let score;
-let playing;
-let instruction = document.querySelector(".instruction");
-let btnOk = document.querySelector(".btn-ok");
-let btnInstruction = document.querySelector(".btn-instruction");
+const player0 = document.querySelector(".player-0");
+const player1 = document.querySelector(".player-1");
+const score0El = document.getElementById("score-0");
+const score1El = document.getElementById("score-1");
+const current0El = document.getElementById("current-0");
+const current1El = document.getElementById("current-1");
+const diceEl = document.querySelector(".dice");
+const btnNew = document.querySelector(".btn-new");
+const btnRoll = document.querySelector(".btn-roll");
+const btnHold = document.querySelector(".btn-hold");
+const instruction = document.querySelector(".instruction");
+const btnOk = document.querySelector(".btn-ok");
+const btnInstruction = document.querySelector(".btn-instruction");
 
-let soundActive = true
-
+let currentScore, playerActive, score, playing, soundActive = true;
 
 // When the game lode and if now game button clicked
 
