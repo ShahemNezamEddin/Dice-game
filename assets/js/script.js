@@ -16,9 +16,8 @@ let playing;
 let instruction = document.querySelector(".instruction");
 let btnOk = document.querySelector(".btn-ok");
 let btnInstruction = document.querySelector(".btn-instruction");
-let diceAudio = document.getElementById("dice-audio");
-let clickAudio = document.getElementById("click-audio");
-let winnerAudio = document.getElementById("winner-audio");
+
+let soundActive = true
 
 
 // When the game lode and if now game button clicked
@@ -46,7 +45,7 @@ function newGame() {
 
 }
 
-
+//Switch player
 function switchPlayer() {
     document.getElementById(`current-${playerActive}`).innerText = 0;
     playerActive = playerActive === 0 ? 1 : 0;
@@ -55,11 +54,34 @@ function switchPlayer() {
     player1.classList.toggle("player-active");
 };
 
+// Dice-audio
+function diceAudio(soundActive) {
+    if (soundActive) {
+        document.getElementById("dice-audio").play();
+    }
+};
+
+// Click-audio
+function clickAudio(soundActive) {
+    if (soundActive) {
+        document.getElementById("click-audio").play();
+    }
+};
+
+// Winner-audio
+function winnerAudio(soundActive) {
+    if (soundActive) {
+        document.getElementById("winner-audio").play();
+    }
+};
+
+
+
 
 // Add eventListener to roll button
 btnRoll.addEventListener("click", function () {
     if (playing) {
-        diceAudio.play();
+        diceAudio(soundActive);
         //Generate random dice roll
         let dice = Math.floor(Math.random() * 6) + 1;
         //Display dice roll
@@ -81,7 +103,8 @@ btnRoll.addEventListener("click", function () {
 
 btnHold.addEventListener("click", function () {
     if (playing) {
-        clickAudio.play();
+        // Add sound 
+        clickAudio(soundActive);
         // Add current score to total score
         score[playerActive] += currentScore;
         document.getElementById(`score-${playerActive}`).innerText = score[playerActive];
@@ -104,13 +127,14 @@ btnHold.addEventListener("click", function () {
 // Add eventListener to New game button
 
 btnNew.addEventListener("click", function () {
-    clickAudio.play();
+    // Add sound 
+    clickAudio(soundActive);
     newGame();
 });
 
 // Wait for the DOM to finish loading before running the game
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     newGame();
 });
 
@@ -118,13 +142,15 @@ document.addEventListener("DOMContentLoaded", function() {
 // Add eventListener to ok button
 
 btnOk.addEventListener("click", function () {
-    clickAudio.play();
+    // Add sound 
+    clickAudio(soundActive);
     instruction.classList.add("hidden");
 });
 
 // Add eventListener to ok button
 
 btnInstruction.addEventListener("click", function () {
-    clickAudio.play();
+    // Add sound 
+    clickAudio(soundActive);
     instruction.classList.remove("hidden");
 });
