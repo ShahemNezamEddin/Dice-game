@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Dice Game</title>
 </head>
+
 <body>
     <header class="heading">
-        <img class="logo" src="assets/images/logo.png" alt="logo">
+        <img class="logo" src="assets/images/dice logo sh-01 (2).png" alt="logo">
     </header>
     <main class="game-area">
         <section class="player player-0 player-active">
@@ -30,21 +32,24 @@
             </div>
         </section>
 
-      <img src="assets/images/dice-1.png" alt="Playing dice" class="dice" />
-      <button class="btn btn-new">🔄 New game</button>
-      <button class="btn btn-roll">🎲 Roll dice</button>
-      <button class="btn btn-hold">📥 Hold</button>
-      <button class="btn btn-instruction">instruction</button>
-      <div class="instruction">
-        <h2>instruction</h2>
-        <ul>
-            <li>Game starts from player 1 by default.</li>
-            <li>When player click roll button the number on the dice will be add to current score.</li>
-            <li>When player rolls 1 he looses his current score and switch player.</li>
-            <li>When player click hold button he add his current score to the score and switch player.</li>
-            <li>The first player his score reach 100 is the winner.</li>
-        </ul>
-        <button class="btn btn-ok">ok</button></div>
+        <img src="assets/images/dice-1.png" alt="Playing dice" class="dice" />
+        <button class="btn btn-new">🔄 New game</button>
+        <button class="btn btn-roll">🎲 Roll dice</button>
+        <button class="btn btn-hold">📥 Hold</button>
+        <button class="btn btn-instruction">instruction</button>
+        <div class="instruction">
+            <h2>instruction</h2>
+            <ul>
+                <li>Game starts from player 1 by default.</li>
+                <li>When player click roll button the number on the dice will be add to current score.</li>
+                <li>When player rolls 1 he looses his current score and switch player.</li>
+                <li>When player click hold button he add his current score to the score and switch player.</li>
+                <li>The first player his score reach 100 is the winner.</li>
+            </ul>
+            <div class="instruction-btn-div">
+                <button class="btn btn-ok">ok</button>
+            </div>
+        </div>
         <audio id="dice-audio" src="assets/audios/dice.wav"></audio>
         <audio id="click-audio" src="assets/audios/click.mp3"></audio>
         <audio id="winner-audio" src="assets/audios/winner.flac"></audio>
@@ -52,4 +57,5 @@
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
