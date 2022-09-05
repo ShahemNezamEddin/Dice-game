@@ -170,11 +170,12 @@ body {
 
 .instruction h2 {
     font-size: 5rem;
+    padding-top: 3%;
 }
 
 .instruction ul {
-    padding-top: 12%;
     list-style-type: none;
+    padding: 1% 5% 0 5%;
 }
 
 .instruction ul li {
