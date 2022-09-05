@@ -116,7 +116,7 @@ btnHold.addEventListener("click", function () {
             document.querySelector(`.name-${playerActive}`).innerText = "Winner"
             playing = false;
             diceEl.classList.add("hidden");
-            winnerAudio.play();
+            winnerAudio(soundActive);
         } else {
             //Switch player
             switchPlayer();
