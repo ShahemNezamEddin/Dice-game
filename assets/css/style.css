@@ -35,7 +35,7 @@ body {
 .game-area {
     position: relative;
     width: 70%;
-    height: 63rem;
+    height: 69rem;
     background-color: rgba(255, 255, 255, 0.35);
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
     border-radius: 9px;
@@ -115,20 +115,31 @@ body {
 }
 
 .btn-roll {
-    top: 41.3rem;
+    top: 65%;
 }
 
 .btn-hold {
-    top: 48.1rem;
+    top: 75%;
 }
 
 .btn-instruction {
-    top: 55rem;
+    top: 85%;
+}
+
+.btn-sound {
+    top: 93%;
+    left: 51%;
+}
+
+.btn-mute {
+    top: 93%;
+    right: 51%;
 }
 
 .btn-ok {
     top: 55rem;
 }
+
 
 .btn:active {
     transform: translate(5px);
