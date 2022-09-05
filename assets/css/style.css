@@ -147,10 +147,12 @@ body {
 }
 
 .winner .name-0 {
-    color: #c7365f
+    color: #c7365f;
+    font-size: 400%;
 }
 .winner .name-1 {
-    color: #c7365f
+    color: #c7365f;
+    font-size: 400%;
 }
 
 .instruction {
