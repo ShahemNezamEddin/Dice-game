@@ -18,6 +18,7 @@ let btnOk = document.querySelector(".btn-ok");
 let btnInstruction = document.querySelector(".btn-instruction");
 let diceAudio = document.getElementById("dice-audio");
 let clickAudio = document.getElementById("click-audio");
+let winnerAudio = document.getElementById("winner-audio");
 
 
 // When the game lode and if now game button clicked
@@ -92,6 +93,7 @@ btnHold.addEventListener("click", function () {
             document.querySelector(`.name-${playerActive}`).innerText = "Winner"
             playing = false;
             diceEl.classList.add("hidden");
+            winnerAudio.play();
         } else {
             //Switch player
             switchPlayer();
