@@ -154,3 +154,15 @@ btnInstruction.addEventListener("click", function () {
     clickAudio(soundActive);
     instruction.classList.remove("hidden");
 });
+
+// Add eventListener to sound button
+document.querySelector(".btn-sound").addEventListener("click", function () {
+    soundActive = true;
+    clickAudio(soundActive);
+});
+
+// Add eventListener to mute button
+document.querySelector(".btn-mute").addEventListener("click", function () {
+    soundActive = false;
+    clickAudio(soundActive);
+});
