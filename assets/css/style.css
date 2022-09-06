@@ -54,8 +54,15 @@ body {
 }
 
 /* ELEMENTS */
-.name {
-    font-size: 2rem;
+.name-0 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.name-1 {
+    font-size: 200%;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1rem;
@@ -78,7 +85,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 150%;
     color: #ddd;
 }
 
@@ -202,6 +209,10 @@ body {
 /* For medium screens size from 950px wide and down */
 @media screen and (max-width: 950px) {
 
+    html {
+        font-size: 52%;
+    }
+    
     /* Heading */
     .heading {
         margin: 0.5rem 0;
