@@ -14,6 +14,7 @@
 - [**User experience UX**](<#user-experience-ux>)
     - [User stories](<#user-stories>)
     - [Wireframes](<#wireframes>)
+    - [Flow chart diagram](<#flow-chart-diagram>)
     - [Site structure](<#site-structure>)
     - [Design choices](<#design-choices>)
        - [Typography](<#typography>)
@@ -61,12 +62,20 @@
 
 ![Wireframe ](./assets/images/wireframe.png)
 
+[Back to top](<#navigator>)
+
 ## Flow chart diagram
 
 - Game steps overview.
 - Explain the flow of the game along with the playing scenarios.
 - Shows the sequence of triggering the game's functionalities.
 - Plan and write efficient functions.
+- Game rules:
+   - The game starts from player 1, by default.
+   - When the player clicks the roll button, add the dice number to the current score.
+   - When the player rolls number 1, he loses his current score and switch player.
+   - When the player clicks on the hold button, he adds his current score to the score and switches players.
+   - The first player whose score reaches 100 is the winner.
 
 ![flow-chart-diagram ](./assets/images/flow-chart-diagram.png)
 
@@ -75,7 +84,7 @@
 
 ## Site structure
 
-- Koning Dice Game 2022 has one page contain game area.
+- Dice Game has one page contain game area.
  
 [Back to top](<#navigator>)
 
@@ -98,12 +107,34 @@
 
 ## Existing features
 
-### Game area
+### Header
+-  It contains the logo of the site.
 
-
-![Nav Bar]()
+![Header](./assets/images/header.png)
 
 [Back to top](<#navigator>)
+
+### Instruction
+-  It shows players game instructions.
+
+![Header](./assets/images/instructions.png)
+
+[Back to top](<#navigator>)
+
+### Game area
+- It contains two player sections, six buttons, and a dice.
+- The player section has the player's name, score, and current score.
+- The user will see the buttons easily (New game, Roll dice, Hold, Instruction, Sound, Mute) and click on them.
+- The game area will allow the user to play the dice game and control the sound effect.
+
+![Game area](./assets/images/game-area.png)
+
+[Back to top](<#navigator>)
+
+### Java script functions
+
+
+
 
 ## Future features
 
