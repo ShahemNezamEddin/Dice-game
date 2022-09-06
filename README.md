@@ -141,21 +141,55 @@
   - Hide the dice.
   - Remove winner class.
   - Set game playing to true.
+  - Make click sound effect.
 
 ![New game](./assets/images/now-game-button.png)
 
 [Back to top](<#navigator>)
 
 - Roll dice button on click it will:
-  - Generate random dice roll.
+  - Generate a random dice roll.
   - Display dice roll.
   - Check the dice if (dice > 1) add the dice number to the current score of the player.
-  - Check the dice if (dice = 1) switch player.
+  - Check the dice if (dice = 1) set the current score of the player to 0 then switch players.
+  - Make Roll dice sound effect.
+
    
 ![Roll dice](./assets/images/roll-dice-button.png)
 ![Roll dice](./assets/images/roll-dice-button-1.png)
 
 [Back to top](<#navigator>)
+
+- Hold button on click it will:
+  - Add current score to total score.
+  - Check total score: if (score >= 100) add the winner class to the player, remove active player class. set game playing to false, make winner sound effect, and hide the dice.
+  - Check total score: if (score < 100) switch players.
+  - Make click sound effect.
+   
+![Hold](./assets/images/hold-button.png)
+![Hold](./assets/images/hold-button-winner.png)
+
+[Back to top](<#navigator>)
+
+- Instructions button on click it will show game instructions.
+   
+![Instructions](./assets/images/instructions-button.png)
+![Instructions](./assets/images/instructions.png)
+
+[Back to top](<#navigator>)
+
+- Sound button on click it will play game sound.
+   
+![Sound](./assets/images/sound-button.png)
+
+[Back to top](<#navigator>)
+
+- Mute button on click it will mute game sound.
+   
+![Mute](./assets/images/mute-button.png)
+
+[Back to top](<#navigator>)
+
 
 ## Future features
 
