@@ -1,5 +1,10 @@
-# Koning Dice Game 2022
-
+# Dice Game
+- Dice Game is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted users who love to implement more advanced JavaScript concepts.
+- Dice Game is a fully responsive JavaScript dice game that will allow users to have fun playing togethers.
+- Dice Game site will show the users the instruction of the game when:
+  - The page is loaded.
+  - The instruction is clicked.
+- Dice Game site allow users to set the sound active or mute.
 
 ![Responsive Mockup](#)
 
@@ -49,7 +54,7 @@
 
 ## Wireframes
 
-- The wireframes for Koning Dice Game 2022 were produced in [Balsamiq](https://balsamiq.com).
+- The wireframes for Dice Game were produced in [Balsamiq](https://balsamiq.com).
 - The wireframe display desktop computer.
 - No need for small screens wireframe because game's width is 70% from the page.
 
@@ -67,15 +72,13 @@
 ## Design choices
 
   ### Typography
-  - The fonts chosen were 'Oswald' for the headings and 'Lato' for the body text. They fall back to sans-serif respectively.
-  - 'Lato' is used for the body text as it provides a nice contrast to the cursive whilst being easy to read for all. 
-  - 'Oswald' is used based on google font paring with 'Lato'.
-  - Dancing together site is using both fonts same as Love Running Project.
+  - The fonts chosen were 'Nunito' for the body text. It fall back to sans-serif respectively.
+  - 'Nunito' is used for the body text as it provides a nice contrast to the game, and it easy to read. 
 
   ### Color scheme
   - Use the color group to get the [contrast-grid](https://contrast-grid.eightshapes.com/).
 
-![Contrast grid]()
+![Contrast grid](./assets/images/contrast-grid.png)
 
 
 [Back to top](<#navigator>)
