@@ -21,7 +21,10 @@
        - [Color scheme](<#color-scheme>)
 - [**Features**](<#features>)
     - [Existing features](<#existing-features>)
-         - [Game Area](<#game-area>)   
+         - [Header](<#header>)
+         - [Instruction](<#instruction>)
+         - [Game Area](<#game-area>)
+         - [Java script functions](<#java-script-functions>)   
     - [Future features](<#future-features>)
 - [**Technologies used**](<#technologies-used>)         
 - [**Testing**](<#testing>)
@@ -117,7 +120,7 @@
 ### Instruction
 -  It shows players game instructions.
 
-![Header](./assets/images/instructions.png)
+![Instruction](./assets/images/instructions.png)
 
 [Back to top](<#navigator>)
 
@@ -132,9 +135,27 @@
 [Back to top](<#navigator>)
 
 ### Java script functions
+- New game button on click it will:
+  - Set the variable back to 0.
+  - Make player 1 active.
+  - Hide the dice.
+  - Remove winner class.
+  - Set game playing to true.
 
+![New game](./assets/images/now-game-button.png)
 
+[Back to top](<#navigator>)
 
+- Roll dice button on click it will:
+  - Generate random dice roll.
+  - Display dice roll.
+  - Check the dice if (dice > 1) add the dice number to the current score of the player.
+  - Check the dice if (dice = 1) switch player.
+   
+![Roll dice](./assets/images/roll-dice-button.png)
+![Roll dice](./assets/images/roll-dice-button-1.png)
+
+[Back to top](<#navigator>)
 
 ## Future features
 
