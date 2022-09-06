@@ -1,12 +1,13 @@
 # Dice Game
 - Dice Game is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted users who love to implement more advanced JavaScript concepts.
-- Dice Game is a fully responsive JavaScript dice game that will allow users to have fun playing togethers.
+- Dice Game is a fully responsive JavaScript dice game that will allow users to have fun playing together.
 - Dice Game site will show the users the instruction of the game when:
   - The page is loaded.
   - The instruction is clicked.
-- Dice Game site allow users to set the sound active or mute.
+- Dice Game site allow users to set the sound to active or mute.
 
-![Responsive Mockup](#)
+![Responsive Mockup](./assets/images/amiresponsive.png)
+![Responsive Mockup](./assets/images/amiresponsive-1.png)
 
 # Navigator
 
@@ -41,24 +42,33 @@
 
 ## User stories
 
-- As a user I want to be able to know the instructions of the game.
-- As a user I want to understand the purpose of the site upon loading it.
-- As a user I want to know which player is active.
-- As a user I want to see the dice rolling.
-- As a user I want to hear sound effect on button click.
-- As a user I want to know scours.
-- As a user I want to know the winner.
+- As a user, I want to be able to know the instructions of the game.
+- As a user, I want to understand the purpose of this site upon loading it.
+- As a user, I want to know which player is active.
+- As a user, I want to see the dice rolling.
+- As a user, I want to hear the sound effect on the button click.
+- As a user, I want to know scours.
+- As a user, I want to know the winner.
 
 
 [Back to top](<#navigator>)
 
 ## Wireframes
 
-- The wireframes for Dice Game were produced in [Balsamiq](https://balsamiq.com).
-- The wireframe display desktop computer.
-- No need for small screens wireframe because game's width is 70% from the page.
+- Wireframe of the dice game produced in [Balsamiq](https://balsamiq.com).
+- The wireframe display a desktop computer.
+- No need for small screens wireframes because the game's width is 70% of the page.
 
-![Wireframe ]()
+![Wireframe ](./assets/images/wireframe.png)
+
+## Flow chart diagram
+
+- Game steps overview.
+- Explain the flow of the game along with the playing scenarios.
+- Shows the sequence of triggering the game's functionalities.
+- Plan and write efficient functions.
+
+![flow-chart-diagram ](./assets/images/flow-chart-diagram.png)
 
 
 [Back to top](<#navigator>)
