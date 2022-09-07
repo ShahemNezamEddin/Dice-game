@@ -258,13 +258,14 @@
 [Back to top](<#navigator>)
 
 ## Lighthouse
-The site was also tested using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome Developer Tools to test each of the pages for:
+The Dice game site was also tested using [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome Developer Tools to test the page for:
 - Performance - How the page performs whilst loading.
 - Accessibility - Is the site accessible for all users and how can it be improved.
 - Best Practices - Site conforms to industry best practices.
 - SEO - Search engine optimization. Is the site optimized for search engine result rankings.
 
-![Lighthouse test results Koning Dice Game 2022 page]()
+![Lighthouse test results Dice Game page](./assets/images/lighthouse-instruction.png)
+![Lighthouse test results Dice Game page](./assets/images/lighthouse-game-area.png)
 
 
 [Back to top](<#navigator>)
