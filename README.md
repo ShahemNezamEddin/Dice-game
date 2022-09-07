@@ -278,22 +278,22 @@ The Dice game site was also tested using [Google Lighthouse](https://developers.
 # Deployment
 
 ## To deploy the project
-The site deployed to GitHub pages. The steps to deploy a site are as follows:
-  1. In the Dance together gitHub repository, go to **settings** tap.
+The Dice game site deployed to GitHub pages. The steps to deploy a site are as follows:
+  1. In the Dice game gitHub repository, go to **settings** tap.
   2. In Settings, navigate to the **Pages** tab on the left-hand side.
   3. Under **Source**, select the branch to **main**, then click **save**.
-  4. Once the main branch has been selected, the page will be automatically deployed successfully on the [Koning Dice Game 2022](https://shahemnezameddin.github.io/Dice-game/) site.
+  4. Once the main branch has been selected, the page will be automatically deployed successfully on the [Dice Game](https://shahemnezameddin.github.io/Dice-game/) site.
 
-![Deployment]()
+![Deployment](./assets/images/github-deployment.png)
 
 [Back to top](<#navigator>)
 
 ## To fork the repository on GitHub
 A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
-1. Log in to **GitHub** and locate the [repository](https://github.com/ShahemNezamEddin/Dancing-together).
+1. Log in to **GitHub** and locate the [repository](https://shahemnezameddin.github.io/Dice-game/).
 2. On the right-hand side of the page inline with the repository name, is a button called **'Fork'**. Click on the button to create a copy of the original repository in your GitHub Account.
 
-![Github repository fork]()
+![Github repository fork](./assets/images/github-fork.png)
 
 [Back to top](<#navigator>)
 
@@ -307,7 +307,7 @@ The method for cloning a project from GitHub is below:
 5. Type **git clone**, then paste the URL copied from GitHub.
 6. Press **enter**, and the local clone will be created.
 
-![Github repository clone]()
+![Github repository clone](./assets/images/github-clone.png)
 
 [Back to top](<#navigator>)
 
