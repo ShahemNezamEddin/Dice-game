@@ -47,28 +47,28 @@ function switchPlayer() {
     currentScore = 0;
     player0.classList.toggle("player-active");
     player1.classList.toggle("player-active");
-};
+}
 
 // Dice-audio
 function diceAudio(soundActive) {
     if (soundActive) {
         document.getElementById("dice-audio").play();
     }
-};
+}
 
 // Click-audio
 function clickAudio(soundActive) {
     if (soundActive) {
         document.getElementById("click-audio").play();
     }
-};
+}
 
 // Winner-audio
 function winnerAudio(soundActive) {
     if (soundActive) {
         document.getElementById("winner-audio").play();
     }
-};
+}
 
 
 
@@ -109,7 +109,7 @@ btnHold.addEventListener("click", function () {
             //Active player wins!
             document.querySelector(`.player-${playerActive}`).classList.add("winner");
             document.querySelector(`.player-${playerActive}`).classList.remove("player-active");
-            document.querySelector(`.name-${playerActive}`).innerText = "Winner"
+            document.querySelector(`.name-${playerActive}`).innerText = "Winner";
             playing = false;
             diceEl.classList.add("hidden");
             winnerAudio(soundActive);

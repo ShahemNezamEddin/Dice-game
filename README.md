@@ -192,6 +192,8 @@
 
 
 ## Future features
+- Implement 3d rolling dice.
+- Implement player name input.
 
 
 [Back to top](<#navigator>)
@@ -215,13 +217,23 @@
 
 * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
-![W3C Validator test result]()
+![W3C Validator test result](./assets/images/html-validator.png)
 
 
 ### CSS
   - No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/)
 
-![W3C Validator test result]()
+![W3C Validator test result](./assets/images/css-validator.png)
+
+### JavaScript
+  - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+    - The following metrics were returned: 
+      - There are 13 functions in this file..
+      - Function with the largest signature take 1 arguments, while the median is 0.
+      - Largest function has 15 statements in it, while the median is 2.
+      - The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+
+ ![Jshint validator test result](./assets/images/JsHint-validator.png)     
 
 
 [Back to top](<#navigator>)
@@ -230,7 +242,7 @@
 
 * The responsive tests were exercised by using [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
-|        | iPad mine | Galaxy S5 | iPhone 6/7/8 | iPad | iPad Pro | iPhone 6/7/8 plus | Display >1200px |
+|        | iPad mine | Galaxy S5 | iPhone 6/7/8 | iPad | iPad Pro | iPhone 6/7/8 plus | Display >950px  |
 |--------|-----------|-----------|--------------|------|----------|-------------------|-----------------|
 | Text   | pass      | pass      | pass         | pass | pass     | pass              | pass            |
 | Images | pass      | pass      | pass         | pass | pass     | pass              | pass            |
@@ -240,7 +252,7 @@
 
 ## Browser Compatibility
 
-- The dancing together site was tested on the following browsers Google Chrome, Safari and Mozilla Firefox.
+- The Dice game site was tested on the following browsers Google Chrome, Safari and Mozilla Firefox.
 - Appearance, functionality and responsiveness were consistent on a range of different device sizes and browsers.
 
 [Back to top](<#navigator>)
