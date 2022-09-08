@@ -71,8 +71,6 @@ function winnerAudio(soundActive) {
 }
 
 
-
-
 // Add eventListener to roll button
 btnRoll.addEventListener("click", function () {
     if (playing) {

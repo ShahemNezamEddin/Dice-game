@@ -145,7 +145,7 @@
   - Set game playing to true.
   - Make click sound effect.
 
-![New game](./assets/images/readme-img/now-game-button.png)
+![New game](./assets/images/readme-img/new-game-button.png)
 
 [Back to top](<#navigator>)
 
@@ -272,6 +272,15 @@ The Dice game site was also tested using [Google Lighthouse](https://developers.
 [Back to top](<#navigator>)
 
 ## Manual testing
+- Show instructions text and click on the ok button is working as expected. 
+- Active player background is working as expected.
+- Click on the roll dice button is working as expected. It generates a random dice number. 
+- Click on hold button is working as expected. The player can hold his current score.
+- Click on the instructions button is working as expected. It shows instructions.
+- Click on the new game button is working as expected. It resets and starts a new game.
+- Click on the mute button is working as expected. It mutes game sound effects.
+- Click on the sound dice button is working as expected. It activates the game's sound effects.
+- Check winner class is working as expected.
 
 
 [Back to top](<#navigator>)
@@ -298,7 +307,9 @@ The Dice game site was also tested using [Google Lighthouse](https://developers.
 [Back to top](<#navigator>)
 
 ## Fixed bugs
-
+- Used getElementsByClassName to get dice element but it didn't work. I had to use querySelector.
+- I saw a browser console error about favicon.ico. I searched on google for a solution and implemented it.
+- Now game button didn't reset the player name after finishing the game. The solution was set players names back to player 1 and player 2.  
 
 [Back to top](<#navigator>)
 
