@@ -13,31 +13,30 @@ const instruction = document.querySelector(".instruction");
 const btnOk = document.querySelector(".btn-ok");
 const btnInstruction = document.querySelector(".btn-instruction");
 
-let currentScore, playerActive, score, playing, soundActive = true;
+let currentScore, playerActive, score, playing, soundActive;
 
 // When the game lode and if now game button clicked
-
 function newGame() {
+    // Set scour value to 0
     score0El.innerText = 0;
     score1El.innerText = 0;
     current0El.innerText = 0;
     current1El.innerText = 0;
-
+    // assign value to let variables
     currentScore = 0;
     playerActive = 0;
     score = [0, 0];
     playing = true;
-
+    soundActive = true;
+    // add and remove style on elements
     diceEl.classList.add("hidden");
     player0.classList.add("player-active");
     player1.classList.remove("player-active");
     player0.classList.remove("winner");
     player1.classList.remove("winner");
-
+    // set player name
     document.querySelector(".name-0").innerText = "player 1";
     document.querySelector(".name-1").innerText = "player 2";
-
-
 }
 
 //Switch player
@@ -70,7 +69,6 @@ function winnerAudio(soundActive) {
     }
 }
 
-
 // Add eventListener to roll button
 btnRoll.addEventListener("click", function () {
     if (playing) {
@@ -94,7 +92,6 @@ btnRoll.addEventListener("click", function () {
 });
 
 // Add eventListener to hold button
-
 btnHold.addEventListener("click", function () {
     if (playing) {
         // Add sound 
@@ -119,7 +116,6 @@ btnHold.addEventListener("click", function () {
 });
 
 // Add eventListener to New game button
-
 btnNew.addEventListener("click", function () {
     // Add sound 
     clickAudio(soundActive);
@@ -127,14 +123,12 @@ btnNew.addEventListener("click", function () {
 });
 
 // Wait for the DOM to finish loading before running the game
-
 document.addEventListener("DOMContentLoaded", function () {
     newGame();
 });
 
 
 // Add eventListener to ok button
-
 btnOk.addEventListener("click", function () {
     // Add sound 
     clickAudio(soundActive);
@@ -142,7 +136,6 @@ btnOk.addEventListener("click", function () {
 });
 
 // Add eventListener to ok button
-
 btnInstruction.addEventListener("click", function () {
     // Add sound 
     clickAudio(soundActive);

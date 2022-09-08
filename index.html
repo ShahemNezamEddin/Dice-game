@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- HTML header tag -->
 
 <head>
     <meta charset="UTF-8">
@@ -9,12 +10,16 @@
     <link rel="shortcut icon" href="assets/images/dice-5.png">
     <title>Dice Game</title>
 </head>
+<!-- HTML body Tag -->
 
 <body>
+    <!-- header - logo -->
     <header class="heading">
         <img class="logo" src="assets/images/logo.png" alt="logo">
     </header>
+    <!-- main - game-area -->
     <main class="game-area">
+        <!-- section - player 1 -->
         <section class="player player-0 player-active">
             <h2 class="name-0">player 1</h2>
             <p class="score" id="score-0">50</p>
@@ -23,7 +28,7 @@
                 <p class="current-score" id="current-0">12</p>
             </div>
         </section>
-
+        <!-- section - player 2 -->
         <section class="player player-1">
             <h2 class="name-1">player 2</h2>
             <p class="score" id="score-1">20</p>
@@ -32,32 +37,36 @@
                 <p class="current-score" id="current-1">15</p>
             </div>
         </section>
-
+        <!-- img - dice img -->
         <img src="assets/images/dice-1.png" alt="Playing dice 1" class="dice" />
+        <!-- buttons -->
         <button class="btn btn-new">🔄 New game</button>
         <button class="btn btn-roll">🎲 Roll dice</button>
         <button class="btn btn-hold">📥 Hold</button>
         <button class="btn btn-instruction">Instruction</button>
         <button class="btn btn-sound">🔊 Sound</button>
         <button class="btn btn-mute">🔈 Mute</button>
+        <!-- div - instructions -->
         <div class="instruction">
-            <h2>Instruction</h2>
+            <h2>Instructions</h2>
             <ul>
                 <li>The game starts from player 1, by default.</li>
                 <li>When the player clicks the roll button, add the dice number to the current score.</li>
                 <li>When the player rolls number 1, he loses his current score and switch player.</li>
-                <li>When the player clicks on the hold button, he adds his current score to the score and switches players.</li>
+                <li>When the player clicks on the hold button, he adds his current score to the score and switches
+                    players.</li>
                 <li>The first player whose score reaches 100 is the winner.</li>
             </ul>
             <div class="instruction-btn-div">
                 <button class="btn btn-ok">ok</button>
             </div>
         </div>
+        <!-- audio - dice - click - winner -->
         <audio id="dice-audio" src="assets/audios/dice.wav"></audio>
         <audio id="click-audio" src="assets/audios/click.mp3"></audio>
         <audio id="winner-audio" src="assets/audios/winner.flac"></audio>
     </main>
-
+    <!-- script tag - java script file -->
     <script src="assets/js/script.js"></script>
 </body>
 
