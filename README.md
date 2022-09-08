@@ -5,6 +5,8 @@
   - The page is loaded.
   - The instruction is clicked.
 - Dice Game site allow users to set the sound to active or mute.
+[Dice Game](https://shahemnezameddin.github.io/Dice-game/) site.
+
 
 ![Responsive Mockup](./assets/images/readme-img/amiresponsive.png)
 ![Responsive Mockup](./assets/images/readme-img/amiresponsive-1.png)
@@ -196,6 +198,7 @@
 ## Future features
 - Implement 3d rolling dice.
 - Implement player name input.
+- Toggle the game's sound effects by using one button.
 
 
 [Back to top](<#navigator>)
@@ -302,6 +305,10 @@ The Dice game site was also tested using [Google Lighthouse](https://developers.
 - As a user, I want to know the winner.
 
 ![User stories testing.winner](./assets/images/readme-img/winner.png)
+
+- As a user, I want to know scours.
+
+![User stories testing.scours](./assets/images/readme-img/hold-button-winner.png)
 
 
 [Back to top](<#navigator>)
