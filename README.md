@@ -6,8 +6,8 @@
   - The instruction is clicked.
 - Dice Game site allow users to set the sound to active or mute.
 
-![Responsive Mockup](./assets/images/amiresponsive.png)
-![Responsive Mockup](./assets/images/amiresponsive-1.png)
+![Responsive Mockup](./assets/images/readme-img/amiresponsive.png)
+![Responsive Mockup](./assets/images/readme-img/amiresponsive-1.png)
 
 # Navigator
 
@@ -32,6 +32,8 @@
     - [Responsiveness Test](<#responsiveness-test>)
     - [Browser Compatibility](<#browser-compatibility>)
     - [Lighthouse](<#lighthouse>)
+    - [Manual testing](<#manual-testing>)
+    - [User stories testing](<#user-stories-testing>)
     - [Fixed bugs](<#Fixed-bugs>)
 - [**Deployment**](<#deployment>)
     - [To deploy the project](<#to-deploy-the-project>)
@@ -63,7 +65,7 @@
 - The wireframe display a desktop computer.
 - No need for small screens wireframes because the game's width is 70% of the page.
 
-![Wireframe ](./assets/images/wireframe.png)
+![Wireframe ](./assets/images/readme-img/wireframe.png)
 
 [Back to top](<#navigator>)
 
@@ -80,7 +82,7 @@
    - When the player clicks on the hold button, he adds his current score to the score and switches players.
    - The first player whose score reaches 100 is the winner.
 
-![flow-chart-diagram ](./assets/images/flow-chart-diagram.png)
+![flow-chart-diagram ](./assets/images/readme-img/flow-chart-diagram.png)
 
 
 [Back to top](<#navigator>)
@@ -100,7 +102,7 @@
   ### Color scheme
   - Use the color group to get the [contrast-grid](https://contrast-grid.eightshapes.com/).
 
-![Contrast grid](./assets/images/contrast-grid.png)
+![Contrast grid](./assets/images/readme-img/contrast-grid.png)
 
 
 [Back to top](<#navigator>)
@@ -113,14 +115,14 @@
 ### Header
 -  It contains the logo of the site.
 
-![Header](./assets/images/header.png)
+![Header](./assets/images/readme-img/header.png)
 
 [Back to top](<#navigator>)
 
 ### Instruction
 -  It shows players game instructions.
 
-![Instruction](./assets/images/instructions.png)
+![Instruction](./assets/images/readme-img/instructions.png)
 
 [Back to top](<#navigator>)
 
@@ -130,7 +132,7 @@
 - The user will see the buttons easily (New game, Roll dice, Hold, Instruction, Sound, Mute) and click on them.
 - The game area will allow the user to play the dice game and control the sound effect.
 
-![Game area](./assets/images/game-area.png)
+![Game area](./assets/images/readme-img/game-area.png)
 
 [Back to top](<#navigator>)
 
@@ -143,7 +145,7 @@
   - Set game playing to true.
   - Make click sound effect.
 
-![New game](./assets/images/now-game-button.png)
+![New game](./assets/images/readme-img/now-game-button.png)
 
 [Back to top](<#navigator>)
 
@@ -155,8 +157,8 @@
   - Make Roll dice sound effect.
 
    
-![Roll dice](./assets/images/roll-dice-button.png)
-![Roll dice](./assets/images/roll-dice-button-1.png)
+![Roll dice](./assets/images/readme-img/roll-dice-button.png)
+![Roll dice](./assets/images/readme-img/roll-dice-button-1.png)
 
 [Back to top](<#navigator>)
 
@@ -166,27 +168,27 @@
   - Check total score: if (score < 100) switch players.
   - Make click sound effect.
    
-![Hold](./assets/images/hold-button.png)
-![Hold](./assets/images/hold-button-winner.png)
+![Hold](./assets/images/readme-img/hold-button.png)
+![Hold](./assets/images/readme-img/hold-button-winner.png)
 
 [Back to top](<#navigator>)
 
 - Instructions button on click it will show game instructions.
    
-![Instructions](./assets/images/instructions-button.png)
-![Instructions](./assets/images/instructions.png)
+![Instructions](./assets/images/readme-img/instructions-button.png)
+![Instructions](./assets/images/readme-img/instructions.png)
 
 [Back to top](<#navigator>)
 
 - Sound button on click it will play game sound.
    
-![Sound](./assets/images/sound-button.png)
+![Sound](./assets/images/readme-img/sound-button.png)
 
 [Back to top](<#navigator>)
 
 - Mute button on click it will mute game sound.
    
-![Mute](./assets/images/mute-button.png)
+![Mute](./assets/images/readme-img/mute-button.png)
 
 [Back to top](<#navigator>)
 
@@ -217,13 +219,13 @@
 
 * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
-![W3C Validator test result](./assets/images/html-validator.png)
+![W3C Validator test result](./assets/images/readme-img/html-validator.png)
 
 
 ### CSS
   - No errors were found when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/)
 
-![W3C Validator test result](./assets/images/css-validator.png)
+![W3C Validator test result](./assets/images/readme-img/css-validator.png)
 
 ### JavaScript
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
@@ -233,7 +235,7 @@
       - Largest function has 15 statements in it, while the median is 2.
       - The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
- ![Jshint validator test result](./assets/images/JsHint-validator.png)     
+ ![Jshint validator test result](./assets/images/readme-img/JsHint-validator.png)     
 
 
 [Back to top](<#navigator>)
@@ -251,7 +253,6 @@
 
 
 ## Browser Compatibility
-
 - The Dice game site was tested on the following browsers Google Chrome, Safari and Mozilla Firefox.
 - Appearance, functionality and responsiveness were consistent on a range of different device sizes and browsers.
 
@@ -264,8 +265,34 @@ The Dice game site was also tested using [Google Lighthouse](https://developers.
 - Best Practices - Site conforms to industry best practices.
 - SEO - Search engine optimization. Is the site optimized for search engine result rankings.
 
-![Lighthouse test results Dice Game page](./assets/images/lighthouse-instruction.png)
-![Lighthouse test results Dice Game page](./assets/images/lighthouse-game-area.png)
+![Lighthouse test results Dice Game page](./assets/images/readme-img/lighthouse-instruction.png)
+![Lighthouse test results Dice Game page](./assets/images/readme-img/lighthouse-game-area.png)
+
+
+[Back to top](<#navigator>)
+
+## Manual testing
+
+
+[Back to top](<#navigator>)
+
+## User stories testing
+- As a user, I want to be able to know the instructions of the game.
+
+![User stories testing.instructions](./assets/images/readme-img/instructions.png)
+![User stories testing.instructions](./assets/images/readme-img/instructions-button.png)
+
+- As a user, I want to understand the purpose of this site upon loading it.
+
+![User stories testing.understand the purpose of this site](./assets/images/readme-img/header.png)
+
+- As a user, I want to know which player is active.
+
+![User stories testing.active player](./assets/images/readme-img/active-player.png)
+
+- As a user, I want to know the winner.
+
+![User stories testing.winner](./assets/images/readme-img/winner.png)
 
 
 [Back to top](<#navigator>)
@@ -284,7 +311,7 @@ The Dice game site deployed to GitHub pages. The steps to deploy a site are as f
   3. Under **Source**, select the branch to **main**, then click **save**.
   4. Once the main branch has been selected, the page will be automatically deployed successfully on the [Dice Game](https://shahemnezameddin.github.io/Dice-game/) site.
 
-![Deployment](./assets/images/github-deployment.png)
+![Deployment](./assets/images/readme-img/github-deployment.png)
 
 [Back to top](<#navigator>)
 
@@ -293,7 +320,7 @@ A copy of the GitHub Repository can be made by forking the GitHub account. This 
 1. Log in to **GitHub** and locate the [repository](https://shahemnezameddin.github.io/Dice-game/).
 2. On the right-hand side of the page inline with the repository name, is a button called **'Fork'**. Click on the button to create a copy of the original repository in your GitHub Account.
 
-![Github repository fork](./assets/images/github-fork.png)
+![Github repository fork](./assets/images/readme-img/github-fork.png)
 
 [Back to top](<#navigator>)
 
@@ -307,7 +334,7 @@ The method for cloning a project from GitHub is below:
 5. Type **git clone**, then paste the URL copied from GitHub.
 6. Press **enter**, and the local clone will be created.
 
-![Github repository clone](./assets/images/github-clone.png)
+![Github repository clone](./assets/images/readme-img/github-clone.png)
 
 [Back to top](<#navigator>)
 
